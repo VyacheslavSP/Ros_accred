@@ -105,7 +105,7 @@ def Work_TMP_Excel():
     root_list = ['Пугачев', 'Белов', 'Власов', 'Трошкина', 'Маряхин',
                  'Дзюба', 'Петрунин', 'Блохин', 'Голованова',  'Добровольская', 'Максимов']
     ##
-    path = 'C:\\Users\\VecheslavSP\\Desktop\\Python\\Ros_accred\\ex_corr\\tmp.xlsx'
+    path = 'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr/tmp.xlsx'
     Excel = win32com.client.Dispatch("Excel.Application")
     wb = Excel.Workbooks.Open(path)
     sheet = wb.ActiveSheet
@@ -201,6 +201,3 @@ def write_rows_in_Stas(path_of_excel_Stas, path_of_excell_my, flag):
         ExcelMy.Quit()
     else:
         print("ничего не надо")
-
-
-# Work_TMP_Excel()

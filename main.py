@@ -19,7 +19,7 @@ path_of_excel_Stas = 'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr/В�
 
 def full_operation():
     # запуск манагера и первая выгрузга в XLS
-    Start_export_manager.main_work_manager()
+ #   Start_export_manager.main_work_manager()
 # Корректировка Экселя (форматы даты, пустота и прочее)
     path_of_excell = Ex_correct.Work_TMP_Excel()
 # проверка на уже отправленные файлы

@@ -1,0 +1,2 @@
+from Bulid_poveritel_class_cortege import Build_poveritel_list
+print(Build_poveritel_list())
