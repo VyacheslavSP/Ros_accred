@@ -92,7 +92,17 @@ def main_insert_accredit(excell_path, only_write, only_send_tmp):
     if (only_write and only_send_tmp):
         try_whith_selenium_action(driver, excell_path)
         acsept_value(excell_path)
-    else:
+    else:  # ветка нового варианта
+        button = driver.find_element(
+            By.CSS_SELECTOR, "body > fgis-root > div > fgis-roei > fgis-roei-verification-measuring-instruments > div > div > div.header-block > fgis-table-toolbar > section > div > div.left-side > div > fgis-toolbar > div > div:nth-child(5) > fgis-toolbar-button > button")
+        button.click()
+        entry_body = driver.find_element(By.ID, 'file')
+        entry_body.send_keys(
+            'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr/export.xml')
+        time.sleep(0.5)  # запас на тупление сайта
+        button_2 = driver.find_element(
+            By.CSS_SELECTOR, '#mainDialog > fgis-modal > div > div.fgis-modal__content > div.fgis-modal__footer > div > button:nth-child(1)')
+        button_2.click()
         return driver
 
 
@@ -267,3 +277,6 @@ def try_whith_selenium_action(driver, excell_path):
     Excel.Quit()
     driver.close()  # закрыть обе вкладки
     driver.close()
+
+
+#main_insert_accredit("123", False, False)

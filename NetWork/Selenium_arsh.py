@@ -11,7 +11,7 @@ def get_maximum_rows(sheet):
     rows = 0
     i = 1
     while i < 10000:
-        if (sheet.Cells(i, 1).value != None):
+        if (sheet.Cells(i, 1).Value != None):
             rows += 1
             i += 1
         else:
@@ -29,7 +29,7 @@ def find_reestr(path_of_excell):
     for i in range(rows-1):        # -1 строка заголовка
 
         link = "https://fgis.gost.ru/fundmetrology/cm/results?filter_result_docnum=" + \
-            sheet.Cells(i+2, 1).value.split()[0]
+            sheet.Cells(i+2, 1).Value.split()[0]
 
         driver = webdriver.Chrome(options=options)
         driver.get(link)
@@ -45,12 +45,12 @@ def find_reestr(path_of_excell):
                         elem = (driver.find_elements(By.TAG_NAME, 'td'))
                         time.sleep(0.2)
                         if (len(elem) != 0):
-                            sheet.Cells(i+2, 2).value = elem[1].text
-                            sheet.Cells(i+2, 3).value = elem[6].text
+                            sheet.Cells(i+2, 2).Value = elem[1].text
+                            sheet.Cells(i+2, 3).Value = elem[6].text
                             try:
                                 # если парситтся по точке
                                 if (elem[7].text != None):
-                                    sheet.Cells(i+2, 4).value = elem[7].text
+                                    sheet.Cells(i+2, 4).Value = elem[7].text
                             except:
                                 None
                             driver.quit()
@@ -64,9 +64,7 @@ def find_reestr(path_of_excell):
                     except:
                         time.sleep(0.2)
     wb.Save()
-    time.sleep(0.2)
     wb.Close()
-    time.sleep(0.2)
     Excel.Quit()
     return
 

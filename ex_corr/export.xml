@@ -1,6 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Message xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<VerificationMeasuringInstrumentData>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>И-МА/17-04-2023/239474332</NumberVerification>
+			<DateVerification>2023-04-17</DateVerification>
+			<TypeMeasuringInstrument>16694-97</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Белов</Last>
+					<First></First>
+				</Name>
+				<SNILS>07117484556</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>2</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/17-04-2023/239474481</NumberVerification>
+			<DateVerification>2023-04-17</DateVerification>
+			<DateEndVerification>2024-04-16</DateEndVerification>
+			<TypeMeasuringInstrument>15560-07</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Белов</Last>
+					<First></First>
+				</Name>
+				<SNILS>07117484556</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/17-04-2023/239622641</NumberVerification>
+			<DateVerification>2023-04-17</DateVerification>
+			<DateEndVerification>2024-04-16</DateEndVerification>
+			<TypeMeasuringInstrument>75096-19</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Дзюба</Last>
+					<First></First>
+				</Name>
+				<SNILS>04668786214</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/17-04-2023/239398498</NumberVerification>
+			<DateVerification>2023-04-17</DateVerification>
+			<DateEndVerification>2024-04-16</DateEndVerification>
+			<TypeMeasuringInstrument>80741-20</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Трошкина</Last>
+					<First></First>
+				</Name>
+				<SNILS>00629025620</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/17-04-2023/239398109</NumberVerification>
+			<DateVerification>2023-04-17</DateVerification>
+			<DateEndVerification>2024-04-16</DateEndVerification>
+			<TypeMeasuringInstrument>37858-08</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Трошкина</Last>
+					<First></First>
+				</Name>
+				<SNILS>00629025620</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
 	</VerificationMeasuringInstrumentData>
 	<SaveMethod>2</SaveMethod>
 </Message>

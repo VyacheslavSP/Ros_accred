@@ -11,7 +11,7 @@ def get_maximum_rows(sheet):
     rows = 0
     i = 1
     while i < 10000:
-        if (sheet.Cells(i, 1).value != None):
+        if (sheet.Cells(i, 1).Value != None):
             rows += 1
             i += 1
         else:
@@ -46,7 +46,7 @@ def send_id(array_id):
 def create_id_array(sheet, row):
     array_id = []
     for iter in range(row):
-        array_id.append(sheet.Cells(iter+2, 1).value)
+        array_id.append(sheet.Cells(iter+2, 1).Value)
     array_id.pop(row-1)
     return array_id
 
@@ -55,7 +55,7 @@ def valid_date(max_row, sheet):
     j = 3
     while j < 5:  # 2 колонки с датами
         for row in range(max_row):
-            object = sheet.Cells(row+2, j).value
+            object = sheet.Cells(row+2, j).Value
             if object != None:
                 tmp_arr = (object).split('.')
                 for elemet in range(len(tmp_arr)):
@@ -70,23 +70,23 @@ def valid_date(max_row, sheet):
                 tmp_str = tmp_str.replace(' ', '')
                 tmp_str = tmp_str[:len(tmp_str)-1]
 
-                sheet.Cells(row+2, j).value = tmp_str
+                sheet.Cells(row+2, j).Value = tmp_str
         j += 1
 
 
 def valid_person(max_row, sheet):
     for row in range(max_row):
         tmp_str = ''
-        tmp_str = sheet.Cells(row+2, 6).value
+        tmp_str = sheet.Cells(row+2, 6).Value
         if (tmp_str != None):
             tmp_str = tmp_str[:len(tmp_str)-6]
             tmp_str = tmp_str.replace(' ', '')
-            sheet.Cells(row+2, 6).value = tmp_str
+            sheet.Cells(row+2, 6).Value = tmp_str
 
 
 def upper_string(max_row, sheet):
     for row in range(max_row-1):
-        sheet.Cells(row+2, 5).value = str.title(sheet.Cells(row+2, 5).value)
+        sheet.Cells(row+2, 5).Value = str.title(sheet.Cells(row+2, 5).Value)
 
 
 def rename_sheet(sheet):
@@ -113,8 +113,8 @@ def Work_TMP_Excel():
     time.sleep(0.5)
     i = 0
     while i < len(status_list_check)+1:
-        if (sheet.Cells(1, i+1).value == status_list_check[i]):
-            sheet.Cells(1, i+1).value = status_list_correct[i]
+        if (sheet.Cells(1, i+1).Value == status_list_check[i]):
+            sheet.Cells(1, i+1).Value = status_list_correct[i]
             i += 1
         else:
             break
@@ -160,11 +160,11 @@ def Work_TMP_Excel():
 def delete_rows_without_acsess(sheet, max_row, root_list):
     i = 0
     while (i < max_row):
-        if (str(sheet.Cells(i+2, 6).value).split('.')[0].split()[0] in root_list):
+        if (str(sheet.Cells(i+2, 6).Value).split('.')[0].split()[0] in root_list):
             i += 1
         else:
             sheet.rows(i+2).Delete()
-        if (sheet.Cells(i+2, 6).value == None):
+        if (sheet.Cells(i+2, 6).Value == None):
             break
 
 
@@ -180,16 +180,16 @@ def write_rows_in_Stas(path_of_excel_Stas, path_of_excell_my, flag):
         maxMyRow = get_maximum_rows(sheetMy)
         i = 0
         while (i < maxMyRow):
-            sheetStas.Cells(startRow+i+1, 1).value = sheetMy.Cells(i+2, 1)
-            sheetStas.Cells(startRow+i+1, 2).value = sheetMy.Cells(i+2, 2)
-            sheetStas.Cells(startRow+i+1, 3).value = sheetMy.Cells(i+2, 3)
-            sheetStas.Cells(startRow+i+1, 4).value = sheetMy.Cells(i+2, 4)
-            sheetStas.Cells(startRow+i+1, 5).value = sheetMy.Cells(i+2, 5)
-            sheetStas.Cells(startRow+i+1, 6).value = sheetMy.Cells(i+2, 6)
-            if sheetMy.Cells(i+2, 6).value == "Власов":
-                sheetStas.Cells(startRow+i+1, 8).value = 2
+            sheetStas.Cells(startRow+i+1, 1).Value = sheetMy.Cells(i+2, 1)
+            sheetStas.Cells(startRow+i+1, 2).Value = sheetMy.Cells(i+2, 2)
+            sheetStas.Cells(startRow+i+1, 3).Value = sheetMy.Cells(i+2, 3)
+            sheetStas.Cells(startRow+i+1, 4).Value = sheetMy.Cells(i+2, 4)
+            sheetStas.Cells(startRow+i+1, 5).Value = sheetMy.Cells(i+2, 5)
+            sheetStas.Cells(startRow+i+1, 6).Value = sheetMy.Cells(i+2, 6)
+            if sheetMy.Cells(i+2, 6).Value == "Власов":
+                sheetStas.Cells(startRow+i+1, 8).Value = 2
             else:
-                sheetStas.Cells(startRow+i+1, 8).value = 1
+                sheetStas.Cells(startRow+i+1, 8).Value = 1
             i += 1
         wbMy.Save()
         wbStas.Save()

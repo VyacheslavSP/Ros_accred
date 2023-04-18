@@ -10,10 +10,11 @@ def addSnilsAndDeleteNameSoname(path):
     sheet = wb.ActiveSheet
     max_rows = get_maximum_rows(sheet)
     for i in range(max_rows-1):
-        tmp = sheet.Cells(i+2, 40).value.lstrip()
+        tmp = sheet.Cells(i+2, 40).Value.lstrip()
         tmp = tmp.split(' ')[0]
-        sheet.Cells(i+2, 41).value = disct_pover.get(tmp)
-        sheet.Cells(i+2, 40).value = tmp
+        sheet.Cells(i+2, 41).NumberFormat = "@"
+        sheet.Cells(i+2, 41).Value = str(disct_pover.get(tmp))
+        sheet.Cells(i+2, 40).Value = tmp
     wb.Save()
     wb.Close()
     Excel.Quit()

@@ -1,5 +1,3 @@
-
-
 import sys_path
 import traceback
 import Ex_correct
@@ -9,17 +7,21 @@ import copy_rename_for_accred
 import selenium_accred_build
 import Build_correct_excel
 import Check_sender_files
-import Selenium_rosaccredit
+from Selenium_rosaccredit import main_insert_accredit
+from New_export_manager import main_work_manager_new
+from NewCorrectExcelMain import Main_New_correct_excel
+from StartMacro import start_macro
 
 # Ex_correct.build_correct_excel(path_of_excell, Ex_correct.build_2d_array())
 # print(Ex_correct.check_send_files(
 #   path_of_excell, Ex_correct.build_arrey_for_check()))
 path_of_excel_Stas = 'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr/Выгрузка_v5.4.4.xlsm'
+path_of_new_excel_stas = 'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr/Vigruzka v6.0_standalone.xlsm'
 
 
-def full_operation():
+def full_operation_old():
     # запуск манагера и первая выгрузга в XLS
- #   Start_export_manager.main_work_manager()
+    Start_export_manager.main_work_manager()
 # Корректировка Экселя (форматы даты, пустота и прочее)
     path_of_excell = Ex_correct.Work_TMP_Excel()
 # проверка на уже отправленные файлы
@@ -39,4 +41,12 @@ def full_operation():
     return
 
 
-full_operation()
+def full_operation_new():
+    main_work_manager_new()
+    if (Main_New_correct_excel()):
+        start_macro(path_of_new_excel_stas)  # сбилдили файл
+    input("Ready&")
+    main_insert_accredit("123", False, False)
+
+
+full_operation_new()

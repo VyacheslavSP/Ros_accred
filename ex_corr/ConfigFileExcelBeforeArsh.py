@@ -8,7 +8,7 @@ def configFileBeforeArsh(path):
     wb = Excel.Workbooks.Open(path)
     sheet = wb.ActiveSheet
     max_rows = get_maximum_rows(sheet)
-    sheet.columns("A:AH").Delete()
+    sheet.Columns("A:AH").Delete()
     set_text_format(sheet, max_rows)
     dictPover = Build_poveritel_list()[1]
     root_list = dictPover.keys()
@@ -18,5 +18,3 @@ def configFileBeforeArsh(path):
     Excel.Quit()
 
 
-configFileBeforeArsh(
-    'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr/tmp.xlsx')

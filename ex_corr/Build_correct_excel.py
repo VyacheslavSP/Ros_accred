@@ -8,13 +8,13 @@ def build_correct_excel(path_of_excell):
     wb = Excel.Workbooks.Open(path_of_excell)
     sheet = wb.ActiveSheet
     for i in range(len(d_array)):
-        sheet.Cells(i+2, 1).value = d_array[i][0]
-        sheet.Cells(i+2, 2).value = d_array[i][1]
-        sheet.Cells(i+2, 3).value = d_array[i][2]
+        sheet.Cells(i+2, 1).Value = d_array[i][0]
+        sheet.Cells(i+2, 2).Value = d_array[i][1]
+        sheet.Cells(i+2, 3).Value = d_array[i][2]
         try:
-            sheet.Cells(i+2, 4).value = d_array[i][3]
+            sheet.Cells(i+2, 4).Value = d_array[i][3]
         except:
-            sheet.Cells(i+2, 4).value = ''
+            sheet.Cells(i+2, 4).Value = ''
         i += 1
     wb.Save()
     time.sleep(0.5)

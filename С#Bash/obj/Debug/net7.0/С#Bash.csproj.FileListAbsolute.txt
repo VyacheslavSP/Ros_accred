@@ -1,0 +1,15 @@
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\bin\Debug\net7.0\С#Bash.exe
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\bin\Debug\net7.0\С#Bash.deps.json
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\bin\Debug\net7.0\С#Bash.runtimeconfig.json
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\bin\Debug\net7.0\С#Bash.dll
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\bin\Debug\net7.0\С#Bash.pdb
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.csproj.AssemblyReference.cache
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.AssemblyInfoInputs.cache
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.AssemblyInfo.cs
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.csproj.CoreCompileInputs.cache
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.dll
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\refint\С#Bash.dll
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.pdb
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\С#Bash.genruntimeconfig.cache
+C:\Users\VecheslavSP\Desktop\Python\Ros_accred\С#Bash\obj\Debug\net7.0\ref\С#Bash.dll
