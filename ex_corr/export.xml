@@ -2,23 +2,10 @@
 <Message xsi:noNamespaceSchemaLocation="schema.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<VerificationMeasuringInstrumentData>
 		<VerificationMeasuringInstrument>
-			<NumberVerification>И-МА/17-04-2023/239474332</NumberVerification>
-			<DateVerification>2023-04-17</DateVerification>
-			<TypeMeasuringInstrument>16694-97</TypeMeasuringInstrument>
-			<ApprovedEmployee>
-				<Name>
-					<Last>Белов</Last>
-					<First></First>
-				</Name>
-				<SNILS>07117484556</SNILS>
-			</ApprovedEmployee>
-			<ResultVerification>2</ResultVerification>
-		</VerificationMeasuringInstrument>
-		<VerificationMeasuringInstrument>
-			<NumberVerification>С-МА/17-04-2023/239474481</NumberVerification>
-			<DateVerification>2023-04-17</DateVerification>
-			<DateEndVerification>2024-04-16</DateEndVerification>
-			<TypeMeasuringInstrument>15560-07</TypeMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580860</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>24248-09</TypeMeasuringInstrument>
 			<ApprovedEmployee>
 				<Name>
 					<Last>Белов</Last>
@@ -29,23 +16,149 @@
 			<ResultVerification>1</ResultVerification>
 		</VerificationMeasuringInstrument>
 		<VerificationMeasuringInstrument>
-			<NumberVerification>С-МА/17-04-2023/239622641</NumberVerification>
-			<DateVerification>2023-04-17</DateVerification>
-			<DateEndVerification>2024-04-16</DateEndVerification>
-			<TypeMeasuringInstrument>75096-19</TypeMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240550504</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>64530-16</TypeMeasuringInstrument>
 			<ApprovedEmployee>
 				<Name>
-					<Last>Дзюба</Last>
+					<Last>Добровольская</Last>
 					<First></First>
 				</Name>
-				<SNILS>04668786214</SNILS>
+				<SNILS>02162930114</SNILS>
 			</ApprovedEmployee>
 			<ResultVerification>1</ResultVerification>
 		</VerificationMeasuringInstrument>
 		<VerificationMeasuringInstrument>
-			<NumberVerification>С-МА/17-04-2023/239398498</NumberVerification>
-			<DateVerification>2023-04-17</DateVerification>
-			<DateEndVerification>2024-04-16</DateEndVerification>
+			<NumberVerification>С-МА/21-04-2023/240580865</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>77651-20</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Добровольская</Last>
+					<First></First>
+				</Name>
+				<SNILS>02162930114</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580868</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>77651-20</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Добровольская</Last>
+					<First></First>
+				</Name>
+				<SNILS>02162930114</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580867</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>77651-20</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Добровольская</Last>
+					<First></First>
+				</Name>
+				<SNILS>02162930114</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580880</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>64530-16</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Добровольская</Last>
+					<First></First>
+				</Name>
+				<SNILS>02162930114</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580861</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>77651-20</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Добровольская</Last>
+					<First></First>
+				</Name>
+				<SNILS>02162930114</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240550502</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>64530-16</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Добровольская</Last>
+					<First></First>
+				</Name>
+				<SNILS>02162930114</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240550607</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>24248-09</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Пугачев</Last>
+					<First></First>
+				</Name>
+				<SNILS>10083096212</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240550617</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>20040-11</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Пугачев</Last>
+					<First></First>
+				</Name>
+				<SNILS>10083096212</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240550627</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>59153-14</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Пугачев</Last>
+					<First></First>
+				</Name>
+				<SNILS>10083096212</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580855</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
 			<TypeMeasuringInstrument>80741-20</TypeMeasuringInstrument>
 			<ApprovedEmployee>
 				<Name>
@@ -57,10 +170,24 @@
 			<ResultVerification>1</ResultVerification>
 		</VerificationMeasuringInstrument>
 		<VerificationMeasuringInstrument>
-			<NumberVerification>С-МА/17-04-2023/239398109</NumberVerification>
-			<DateVerification>2023-04-17</DateVerification>
-			<DateEndVerification>2024-04-16</DateEndVerification>
-			<TypeMeasuringInstrument>37858-08</TypeMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240580810</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>26954-09</TypeMeasuringInstrument>
+			<ApprovedEmployee>
+				<Name>
+					<Last>Трошкина</Last>
+					<First></First>
+				</Name>
+				<SNILS>00629025620</SNILS>
+			</ApprovedEmployee>
+			<ResultVerification>1</ResultVerification>
+		</VerificationMeasuringInstrument>
+		<VerificationMeasuringInstrument>
+			<NumberVerification>С-МА/21-04-2023/240550558</NumberVerification>
+			<DateVerification>2023-04-21</DateVerification>
+			<DateEndVerification>2024-04-20</DateEndVerification>
+			<TypeMeasuringInstrument>80741-20</TypeMeasuringInstrument>
 			<ApprovedEmployee>
 				<Name>
 					<Last>Трошкина</Last>

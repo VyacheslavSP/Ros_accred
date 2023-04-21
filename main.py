@@ -45,8 +45,7 @@ def full_operation_new():
     main_work_manager_new()
     if (Main_New_correct_excel()):
         start_macro(path_of_new_excel_stas)  # сбилдили файл
-    input("Ready&")
-    main_insert_accredit("123", False, False)
+        main_insert_accredit("123", False, False)
 
 
 full_operation_new()
