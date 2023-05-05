@@ -91,7 +91,7 @@ def main_work_manager_new():
     except:
         print("ошибка фокуса окна")
     finally:
-        time.sleep(0.2)
+        time.sleep(2)
         keyboard.send("1")
         time.sleep(0.2)
         keyboard.send("2")
@@ -108,11 +108,18 @@ def main_work_manager_new():
         many_filters(poveritel.count_pozition_filters)
         pyautogui.moveTo(602, 519, 1)
         check_muse_state.check_coursor_now(False, 100, True)
-        time.sleep(0.5)
-        win = win32gui.FindWindow(None, 'Ошибка')
+        time.sleep(2)
+        win = 0
+        while win == 0:
+            try:
+                win = win32gui.FindWindow(None, 'Ошибка')
+                if (win != 0):
+                    break
+            except:
+                win = 0
         win32gui.ShowWindow(win, win32con.SW_RESTORE)
-        time.sleep(0.5)
-        mouse_pozition(969, 705,  0.5)
+        time.sleep(2)
+        mouse_pozition(969, 705,  1)
         pyautogui.moveTo(602, 519)
         pyautogui.mouseDown(button='right')
         pyautogui.mouseUp(button='right')
@@ -140,4 +147,4 @@ def main_work_manager_new():
     return
 
 
-# main_work_manager()
+# main_work_manager_new()

@@ -11,6 +11,7 @@ from Selenium_rosaccredit import main_insert_accredit
 from New_export_manager import main_work_manager_new
 from NewCorrectExcelMain import Main_New_correct_excel
 from StartMacro import start_macro
+from Delete_cvs_manager import delete_cvs_manager
 
 # Ex_correct.build_correct_excel(path_of_excell, Ex_correct.build_2d_array())
 # print(Ex_correct.check_send_files(
@@ -20,6 +21,7 @@ path_of_new_excel_stas = 'C:/Users/VecheslavSP/Desktop/Python/Ros_accred/ex_corr
 
 
 def full_operation_old():
+    delete_cvs_manager()    # удалить все временные cvs
     # запуск манагера и первая выгрузга в XLS
     Start_export_manager.main_work_manager()
 # Корректировка Экселя (форматы даты, пустота и прочее)
@@ -42,10 +44,30 @@ def full_operation_old():
 
 
 def full_operation_new():
+    main_work()
+    if (check_arsh()):
+        macro_start(path_of_new_excel_stas)  # сбилдили файл
+        insert_RA()
+
+
+def main_work():
+    delete_cvs_manager()    # удалить все временные cvs
     main_work_manager_new()
-    if (Main_New_correct_excel()):
-        start_macro(path_of_new_excel_stas)  # сбилдили файл
-        main_insert_accredit("123", False, False)
+
+
+def check_arsh():
+    return Main_New_correct_excel()
+
+
+def macro_start(path_of_new_excel_stas):
+    start_macro(path_of_new_excel_stas)
+
+
+def insert_RA():
+    main_insert_accredit("123", False, False)
 
 
 full_operation_new()
+# check_arsh()
+# macro_start(path_of_new_excel_stas)
+# insert_RA()

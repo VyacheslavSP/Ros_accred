@@ -5,6 +5,7 @@ import time
 import win32clipboard
 import win32api
 import win32com.client
+from datetime import datetime
 
 
 def get_maximum_rows(sheet):
@@ -27,7 +28,7 @@ def find_reestr(path_of_excell):
     sheet = wb.ActiveSheet
     rows = get_maximum_rows(sheet)
     for i in range(rows-1):        # -1 строка заголовка
-
+        time.sleep(0.5)
         link = "https://fgis.gost.ru/fundmetrology/cm/results?filter_result_docnum=" + \
             sheet.Cells(i+2, 1).Value.split()[0]
 
@@ -54,6 +55,7 @@ def find_reestr(path_of_excell):
                             except:
                                 None
                             driver.quit()
+                            time.sleep(1)
                             flag = False
                             break
                         else:

@@ -93,7 +93,7 @@ def main_work_manager():
     except:
         print("ошибка фокуса окна")
     finally:
-        time.sleep(0.2)
+        time.sleep(3)
         keyboard.send("1")
         time.sleep(0.2)
         keyboard.send("2")

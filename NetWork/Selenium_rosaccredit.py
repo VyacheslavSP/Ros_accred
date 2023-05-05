@@ -39,7 +39,8 @@ def main_insert_accredit(excell_path, only_write, only_send_tmp):
             time.sleep(0.3)
         except:
             print("без пароля")
-
+        but_later = driver.find_element(By.CLASS_NAME, 'plain-button-inline')
+        but_later.click()
     except:
         print("без госуслуг")
     driver.switch_to.window(driver.window_handles[1])
@@ -279,4 +280,4 @@ def try_whith_selenium_action(driver, excell_path):
     driver.close()
 
 
-#main_insert_accredit("123", False, False)
+# main_insert_accredit("123", False, False)
