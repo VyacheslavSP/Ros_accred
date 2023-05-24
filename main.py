@@ -47,7 +47,10 @@ def full_operation_new():
     main_work()
     if (check_arsh()):
         macro_start(path_of_new_excel_stas)  # сбилдили файл
-        insert_RA()
+  #      try:
+   #         insert_RA()
+    #    except:
+     #       insert_RA()
 
 
 def main_work():

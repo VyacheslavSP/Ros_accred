@@ -22,18 +22,20 @@ def get_maximum_rows(sheet):
 
 def find_reestr(path_of_excell):
     options = Options()
-    # options.add_argument("--headless=new")
+ # options.add_argument("--headless=new")
     Excel = win32com.client.Dispatch("Excel.Application")
     wb = Excel.Workbooks.Open(path_of_excell)
     sheet = wb.ActiveSheet
     rows = get_maximum_rows(sheet)
+    time.sleep(0.5)
     for i in range(rows-1):        # -1 строка заголовка
         time.sleep(0.5)
         link = "https://fgis.gost.ru/fundmetrology/cm/results?filter_result_docnum=" + \
             sheet.Cells(i+2, 1).Value.split()[0]
-
+        time.sleep(0.5)
         driver = webdriver.Chrome(options=options)
         driver.get(link)
+        time.sleep(0.5)
         elem = []
         flag = True
         while (flag):
